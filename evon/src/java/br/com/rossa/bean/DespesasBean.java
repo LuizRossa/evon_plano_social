@@ -11,5 +11,54 @@ package br.com.rossa.bean;
  */
 public class DespesasBean 
 {
+    private String produto, categoria;
+    private float preco;
+    private int quantidade;
+    
+    public DespesasBean()
+    {
+        
+    }
+
+    public String getProduto() 
+    {
+        return produto;
+    }
+
+    public void setProduto(String produto) 
+    {
+        this.produto = produto;
+    }
+
+    public String getCategoria() 
+    {
+        return categoria;
+    }
+
+    public void setCategoria(String categoria) 
+    {
+        this.categoria = categoria;
+    }
+
+    public float getPreco() 
+    {
+        return preco;
+    }
+
+    public void setPreco(float preco) 
+    {
+        this.preco = preco;
+    }
+
+    public int getQuantidade() 
+    {
+        return quantidade;
+    }
+
+    public void setQuantidade(int quantidade) 
+    {
+        this.quantidade = quantidade;
+    }
+    
     
 }

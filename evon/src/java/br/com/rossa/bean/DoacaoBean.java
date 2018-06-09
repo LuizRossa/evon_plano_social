@@ -9,6 +9,27 @@ package br.com.rossa.bean;
  *
  * @author Luiz Rossa
  */
-public class DoacaoBean {
+public class DoacaoBean 
+{
+    private float valor;
+    private EmpresaBean empresa;
+    private InstituicaoBean instituicao;
+   
+    public DoacaoBean()
+    {
+        
+    }
+
+    public float getValor() 
+    {
+        return valor;
+    }
+
+    public void setValor(float valor) 
+    {
+        this.valor = valor;
+    }
+    
+    
     
 }

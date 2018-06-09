@@ -5,11 +5,18 @@
  */
 package br.com.rossa.bean;
 
+import org.eclipse.jdt.internal.compiler.env.IBinaryType;
+
 /**
  *
  * @author Luiz Rossa
  */
-public class InstituicaoBean 
+public class InstituicaoBean extends EmpresaBean
 {
-    
+
+    public InstituicaoBean() 
+    {
+        
+    }
+      
 }

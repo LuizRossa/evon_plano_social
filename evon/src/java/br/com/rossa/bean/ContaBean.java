@@ -11,5 +11,44 @@ package br.com.rossa.bean;
  */
 public class ContaBean 
 {
+    private String banco;
+    private int agencia, conta_corrente;
+    
+    public ContaBean()
+    {
+        
+    }
+
+    public String getBanco() 
+    {
+        return banco;
+    }
+
+    public void setBanco(String banco) 
+    {
+        this.banco = banco;
+    }
+
+    public int getAgencia() 
+    {
+        return agencia;
+    }
+
+    public void setAgencia(int agencia) 
+    {
+        this.agencia = agencia;
+    }
+
+    public int getConta_corrente() 
+    {
+        return conta_corrente;
+    }
+
+    public void setConta_corrente(int conta_corrente) 
+    {
+        this.conta_corrente = conta_corrente;
+    }
+    
+    
     
 }

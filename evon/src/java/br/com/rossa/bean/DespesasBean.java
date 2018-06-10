@@ -14,11 +14,16 @@ public class DespesasBean
     private String produto, categoria;
     private float preco;
     private int quantidade;
-    
-    public DespesasBean()
+
+    public DespesasBean(String produto, String categoria, float preco, int quantidade) 
     {
-        
+        this.produto = produto;
+        this.categoria = categoria;
+        this.preco = preco;
+        this.quantidade = quantidade;
     }
+    
+    
 
     public String getProduto() 
     {

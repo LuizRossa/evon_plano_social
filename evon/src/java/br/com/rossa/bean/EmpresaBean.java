@@ -13,11 +13,15 @@ public class EmpresaBean
 {
     private String nome, endereco, cnpj;
     private ContaBean conta;
-    
-    public EmpresaBean()
+
+    public EmpresaBean(String nome, String endereco, String cnpj) 
     {
-        
+        this.nome = nome;
+        this.endereco = endereco;
+        this.cnpj = cnpj;
     }
+    
+
 
     public String getNome() 
     {

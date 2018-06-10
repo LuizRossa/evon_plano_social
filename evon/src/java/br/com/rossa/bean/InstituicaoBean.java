@@ -13,10 +13,8 @@ import org.eclipse.jdt.internal.compiler.env.IBinaryType;
  */
 public class InstituicaoBean extends EmpresaBean
 {
-
-    public InstituicaoBean() 
+    public InstituicaoBean(String nome, String endereco, String cnpj) 
     {
-        
+        super(nome, endereco, cnpj);
     }
-      
 }

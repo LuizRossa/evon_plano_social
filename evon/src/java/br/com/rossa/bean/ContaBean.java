@@ -13,11 +13,15 @@ public class ContaBean
 {
     private String banco;
     private int agencia, conta_corrente;
-    
-    public ContaBean()
+
+    public ContaBean(String banco, int agencia, int conta_corrente) 
     {
-        
+        this.banco = banco;
+        this.agencia = agencia;
+        this.conta_corrente = conta_corrente;
     }
+    
+
 
     public String getBanco() 
     {

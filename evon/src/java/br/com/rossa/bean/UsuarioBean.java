@@ -12,11 +12,18 @@ package br.com.rossa.bean;
 public class UsuarioBean 
 {
     private String nome, tipo_usuario, instituicao, empresa, login, senha;
-    
-    public UsuarioBean()
+
+    public UsuarioBean(String nome, String tipo_usuario, String instituicao, String empresa, String login, String senha) 
     {
-        
+        this.nome = nome;
+        this.tipo_usuario = tipo_usuario;
+        this.instituicao = instituicao;
+        this.empresa = empresa;
+        this.login = login;
+        this.senha = senha;
     }
+    
+
 
     public String getNome() 
     {

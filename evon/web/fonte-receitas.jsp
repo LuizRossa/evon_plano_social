@@ -19,6 +19,7 @@
 				<li><a href="arrecadacao-destinacao.jsp">ARRECADAÇÃO E DESTINAÇÃO</a></li>
 				<li><a href="configuracoes.jsp">CONFIGURAÇÕES</a></li>
 				<li class="active"><a href="fonte-receitas.jsp">FONTE DE RECEITAS</a></li>
+                                <li><a href="login.jsp">LOGIN</a></li>
 			</ul>
 		</div>
 		<div class="sub-header">

@@ -22,14 +22,14 @@
 			<ul>
 				<li><a href="index.jsp">PAINEL</a></li>
 				<li><a href="arrecadacao-destinacao.jsp">ARRECADA플O E DESTINA플O</a></li>
-				<li class="active"><a href="configuracoes.jsp">CONFIGURA합ES</a></li>
+				<li><a href="configuracoes.jsp">CONFIGURA합ES</a></li>
 				<li><a href="fonte-receitas.jsp">FONTE DE RECEITAS</a></li>
                                 <li><a href="usuarios.jsp">USU핾IO</a></li>
                                 <li><a href="instituicoes.jsp">INSTITUI합ES</a></li>
                                 <li><a href="empresas.jsp">EMPRESAS</a></li>
                                 <li><a href="doacoes.jsp">DOA합ES</a></li>
                                 <li><a href="despesas.jsp">DESPESAS</a></li>
-                                <li><a href="conta.jsp">CONTA</a></li>
+                                <li class="active"><a href="conta.jsp">CONTA</a></li>
 			</ul>
 		</div>
 		<div class="sub-header">
@@ -39,6 +39,24 @@
 			<div class="sub-header-total">
 				<button class="btn-blue">Salvar</button>
 			</div>
+                        
+                    <div class="modal fade" id="myModal" tabindex = "-1" role = "dialog" aria-labelledby ="myModalLabel" aria-hidden = "true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss = "modal" aria-hidden = "true">&times;</button>
+                                    <h4 class="modal-title" id="myModalLabel"></h4>
+                                </div>
+                                <div class="modal-body">
+                                    Cadastro efetuado com sucesso
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss = "modal">Fechar</button>>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
 		</div>
 		<div class="sub-menu inner">			
 			<div class="row">

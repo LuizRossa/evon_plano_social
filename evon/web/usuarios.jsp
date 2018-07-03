@@ -34,9 +34,9 @@
 			<ul>
 				<li><a href="index.jsp">PAINEL</a></li>
 				<li><a href="arrecadacao-destinacao.jsp">ARRECADAÇÃO E DESTINAÇÃO</a></li>
-				<li class="active"><a href="configuracoes.jsp">CONFIGURAÇÕES</a></li>
+				<li><a href="configuracoes.jsp">CONFIGURAÇÕES</a></li>
 				<li><a href="fonte-receitas.jsp">FONTE DE RECEITAS</a></li>
-                                <li><a href="usuarios.jsp">USUÁRIO</a></li>
+                                <li class="active"><a href="usuarios.jsp">USUÁRIO</a></li>
                                 <li><a href="instituicoes.jsp">INSTITUIÇÕES</a></li>
                                 <li><a href="empresas.jsp">EMPRESAS</a></li>
                                 <li><a href="doacoes.jsp">DOAÇÕES</a></li>
@@ -56,7 +56,7 @@
 			<div class="row">
 				<div class="col-lg-6 col-md-6 col-sm-6 content-details">
 					<div class="content-box">
-					<h4>CATEGORIAS</h4>
+					<h4>Perfíl</h4>
 						<div class="box inner-box bg-white">
 							<div class="row">
 								<div class=" col-lg-8 col-md-8 col-sm-8">
@@ -106,149 +106,7 @@
 	   					</div>
 					</div>   					
 				</div>
-				<div class="col-lg-6 col-md-6 col-sm-6 content-details">
-					<div class="content-box">
-						<h4>ITENS</h4>
-	   					<div class="box inner-box bg-white">
-							<div class="row">
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<p>Nome do Item</p>
-								</div>
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<p>Categoria</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<input class="form-control input-box" placeholder="Informe o Item" type="text">
-								</div>
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<div class="form-group">
-									  <select class="form-control input-box">
-									  	<option>Informe a Categoria</option>
-									    <option>1</option>
-									    <option>2</option>
-									    <option>3</option>
-									    <option>4</option>
-									  </select>
-									</div>
-								</div>						
-							</div>
-							<div class="row">
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<input class="form-control input-box" placeholder="Informe o Item" type="text">
-								</div>
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<div class="form-group">
-									  <select class="form-control input-box">
-									  	<option>Informe a Categoria</option>
-									    <option>1</option>
-									    <option>2</option>
-									    <option>3</option>
-									    <option>4</option>
-									  </select>
-									</div>
-								</div>						
-							</div>
-							<div class="row">
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<input class="form-control input-box" placeholder="Informe o Item" type="text">
-								</div>
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<div class="form-group">
-									  <select class="form-control input-box">
-									  	<option>Informe a Categoria</option>
-									    <option>1</option>
-									    <option>2</option>
-									    <option>3</option>
-									    <option>4</option>
-									  </select>
-									</div>
-								</div>						
-							</div>
-							<div class="row">
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<input class="form-control input-box" placeholder="Informe o Item" type="text">
-								</div>
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<div class="form-group">
-									  <select class="form-control input-box">
-									  	<option>Informe a Categoria</option>
-									    <option>1</option>
-									    <option>2</option>
-									    <option>3</option>
-									    <option>4</option>
-									  </select>
-									</div>
-								</div>						
-							</div>
-							<div class="row">
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<input class="form-control input-box" placeholder="Informe o Item" type="text">
-								</div>
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<div class="form-group">
-									  <select class="form-control input-box">
-									  	<option>Informe a Categoria</option>
-									    <option>1</option>
-									    <option>2</option>
-									    <option>3</option>
-									    <option>4</option>
-									  </select>
-									</div>
-								</div>						
-							</div>
-							<div class="row">
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<input class="form-control input-box" placeholder="Informe o Item" type="text">
-								</div>
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<div class="form-group">
-									  <select class="form-control input-box">
-									  	<option>Informe a Categoria</option>
-									    <option>1</option>
-									    <option>2</option>
-									    <option>3</option>
-									    <option>4</option>
-									  </select>
-									</div>
-								</div>						
-							</div>
-							<div class="row">
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<input class="form-control input-box" placeholder="Informe o Item" type="text">
-								</div>
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<div class="form-group">
-									  <select class="form-control input-box">
-									  	<option>Informe a Categoria</option>
-									    <option>1</option>
-									    <option>2</option>
-									    <option>3</option>
-									    <option>4</option>
-									  </select>
-									</div>
-								</div>						
-							</div>
-							<div class="row">
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<input class="form-control input-box" placeholder="Informe o Item" type="text">
-								</div>
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<div class="form-group">
-									  <select class="form-control input-box">
-									  	<option>Informe a Categoria</option>
-									    <option>1</option>
-									    <option>2</option>
-									    <option>3</option>
-									    <option>4</option>
-									  </select>
-									</div>
-								</div>						
-							</div>
-	   					</div>
-					</div>
-				</div>
+				
 			</div>
 		</div>
 	</div>

@@ -19,12 +19,7 @@
 				<li><a href="arrecadacao-destinacao.jsp">ARRECADA플O E DESTINA플O</a></li>
 				<li><a href="configuracoes.jsp">CONFIGURA합ES</a></li>
 				<li><a href="fonte-receitas.jsp">FONTE DE RECEITAS</a></li>                               
-                                <li><a href="usuarios.jsp">USU핾IO</a></li>
-                                <li><a href="instituicoes.jsp">INSTITUI합ES</a></li>
-                                <li><a href="empresas.jsp">EMPRESAS</a></li>
-                                <li><a href="doacoes.jsp">DOA합ES</a></li>
-                                <li><a href="despesas.jsp">DESPESAS</a></li>
-                                <li><a href="conta.jsp">CONTA</a></li>
+                                <li><a href="login.jsp">LOGIN</a></li>
 			</ul>
 		</div>
 		<div class="sub-header">

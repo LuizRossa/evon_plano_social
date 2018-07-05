@@ -64,6 +64,11 @@
 									<input class="form-control input-box" placeholder="E-mail" type="text">
 								</div>
 							</div>
+                                                    	<div class="row">
+								<div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
+                                                                    <input class="form-control input-box" placeholder="Senha" type="password">
+								</div>
+							</div>
 							<div class="row">
 								<div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
 									<input class="form-control input-box" placeholder="Telefone" type="text">

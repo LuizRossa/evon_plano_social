@@ -20,6 +20,7 @@
 				<li class="active"><a href="configuracoes.jsp">CONFIGURAÇÕES</a></li>
 				<li><a href="fonte-receitas.jsp">FONTE DE RECEITAS</a></li>
                                 <li><a href="login.jsp">LOGIN</a></li>
+                                <li><a href="cadastroUsuario.jsp">CADASTRAR USUÁRIO</a></li>
 
 			</ul>
 		</div>

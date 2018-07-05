@@ -1,6 +1,6 @@
 <%-- 
-    Document   : doacores
-    Created on : 01/07/2018, 14:15:41
+    Document   : despesas
+    Created on : 01/07/2018, 14:16:13
     Author     : Luiz Rossa
 --%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
@@ -37,208 +37,54 @@
 	        	<p>Doações</p>
 	    	</div>
 			<div class="sub-header-total">
-				<button class="btn-blue">Salvar</button>
+                            <a href="usuarios.jsp"><button class="btn-blue" id="salvar">Salvar</button></a>
 			</div>
 		</div>
 		<div class="sub-menu inner">			
 			<div class="row">
-				<div class="col-lg-6 col-md-6 col-sm-6 content-details">
-					<div class="content-box">
-					<h4>CATEGORIAS</h4>
-						<div class="box inner-box bg-white">
-							<div class="row">
-								<div class=" col-lg-8 col-md-8 col-sm-8">
-									<p>Nome da Categoria</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Nome da Categoria" type="text">
-								</div>
-							</div>
-							<div class="row">
-								<div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Nome da Categoria" type="text">
-								</div>
-							</div>
-							<div class="row">
-								<div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Nome da Categoria" type="text">
-								</div>
-							</div>
-							<div class="row">
-								<div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Nome da Categoria" type="text">
-								</div>
-							</div>
-							<div class="row">
-								<div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Nome da Categoria" type="text">
-								</div>
-							</div>
-							<div class="row">
-								<div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Nome da Categoria" type="text">
-								</div>
-							</div>
-							<div class="row">
-								<div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Nome da Categoria" type="text">
-								</div>
-							</div>
-							<div class="row">
-								<div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Nome da Categoria" type="text">
-								</div>
-							</div>
-	   					</div>
-					</div>   					
-				</div>
-				<div class="col-lg-6 col-md-6 col-sm-6 content-details">
+				
+				<div class="col-lg-12 col-md-12 col-sm-12 content-details">
 					<div class="content-box">
 						<h4>ITENS</h4>
 	   					<div class="box inner-box bg-white">
 							<div class="row">
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<p>Nome do Item</p>
+								<div class=" col-lg-3 col-md-3 col-sm-3">
+									<p>Selecione a instituição</p>
 								</div>
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<p>Categoria</p>
+                                                                <div class=" col-lg-3 col-md-3 col-sm-3">
+									<p>Valor da doação</p>
 								</div>
 							</div>
 							<div class="row">
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<input class="form-control input-box" placeholder="Informe o Item" type="text">
-								</div>
-								<div class=" col-lg-6 col-md-6 col-sm-6">
+								<div class=" col-lg-3 col-md-3 col-sm-3">
 									<div class="form-group">
 									  <select class="form-control input-box">
-									  	<option>Informe a Categoria</option>
-									    <option>1</option>
-									    <option>2</option>
-									    <option>3</option>
-									    <option>4</option>
+									  	<option>Instituição</option>
+									    <option>Cotolengo</option>
+                                                                            <option>Instituto Amma</option>
+                                                                            <option>Amigos</option>
 									  </select>
 									</div>
-								</div>						
-							</div>
-							<div class="row">
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<input class="form-control input-box" placeholder="Informe o Item" type="text">
 								</div>
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<div class="form-group">
-									  <select class="form-control input-box">
-									  	<option>Informe a Categoria</option>
-									    <option>1</option>
-									    <option>2</option>
-									    <option>3</option>
-									    <option>4</option>
-									  </select>
-									</div>
-								</div>						
-							</div>
-							<div class="row">
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<input class="form-control input-box" placeholder="Informe o Item" type="text">
+                                                                <div class=" col-lg-3 col-md-3 col-sm-3">
+									<input class="form-control input-box" placeholder="R$" type="text">
 								</div>
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<div class="form-group">
-									  <select class="form-control input-box">
-									  	<option>Informe a Categoria</option>
-									    <option>1</option>
-									    <option>2</option>
-									    <option>3</option>
-									    <option>4</option>
-									  </select>
-									</div>
-								</div>						
 							</div>
-							<div class="row">
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<input class="form-control input-box" placeholder="Informe o Item" type="text">
-								</div>
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<div class="form-group">
-									  <select class="form-control input-box">
-									  	<option>Informe a Categoria</option>
-									    <option>1</option>
-									    <option>2</option>
-									    <option>3</option>
-									    <option>4</option>
-									  </select>
-									</div>
-								</div>						
-							</div>
-							<div class="row">
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<input class="form-control input-box" placeholder="Informe o Item" type="text">
-								</div>
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<div class="form-group">
-									  <select class="form-control input-box">
-									  	<option>Informe a Categoria</option>
-									    <option>1</option>
-									    <option>2</option>
-									    <option>3</option>
-									    <option>4</option>
-									  </select>
-									</div>
-								</div>						
-							</div>
-							<div class="row">
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<input class="form-control input-box" placeholder="Informe o Item" type="text">
-								</div>
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<div class="form-group">
-									  <select class="form-control input-box">
-									  	<option>Informe a Categoria</option>
-									    <option>1</option>
-									    <option>2</option>
-									    <option>3</option>
-									    <option>4</option>
-									  </select>
-									</div>
-								</div>						
-							</div>
-							<div class="row">
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<input class="form-control input-box" placeholder="Informe o Item" type="text">
-								</div>
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<div class="form-group">
-									  <select class="form-control input-box">
-									  	<option>Informe a Categoria</option>
-									    <option>1</option>
-									    <option>2</option>
-									    <option>3</option>
-									    <option>4</option>
-									  </select>
-									</div>
-								</div>						
-							</div>
-							<div class="row">
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<input class="form-control input-box" placeholder="Informe o Item" type="text">
-								</div>
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<div class="form-group">
-									  <select class="form-control input-box">
-									  	<option>Informe a Categoria</option>
-									    <option>1</option>
-									    <option>2</option>
-									    <option>3</option>
-									    <option>4</option>
-									  </select>
-									</div>
-								</div>						
-							</div>
+                                                    
 	   					</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+    
+        <script>
+            var botao = document.getElementById("salvar");
+            botao.addEventListener('click', function ()
+            {
+                alert('Doação realizada com sucesso!');
+
+            })
+        </script> 
 </body>
 </html>

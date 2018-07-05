@@ -37,208 +37,72 @@
 	        	<p>Despesas</p>
 	    	</div>
 			<div class="sub-header-total">
-				<button class="btn-blue">Salvar</button>
+                            <a href="usuarios.jsp"><button class="btn-blue" id="salvar">Salvar</button></a>
 			</div>
 		</div>
 		<div class="sub-menu inner">			
 			<div class="row">
-				<div class="col-lg-6 col-md-6 col-sm-6 content-details">
-					<div class="content-box">
-					<h4>CATEGORIAS</h4>
-						<div class="box inner-box bg-white">
-							<div class="row">
-								<div class=" col-lg-8 col-md-8 col-sm-8">
-									<p>Nome da Categoria</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Nome da Categoria" type="text">
-								</div>
-							</div>
-							<div class="row">
-								<div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Nome da Categoria" type="text">
-								</div>
-							</div>
-							<div class="row">
-								<div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Nome da Categoria" type="text">
-								</div>
-							</div>
-							<div class="row">
-								<div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Nome da Categoria" type="text">
-								</div>
-							</div>
-							<div class="row">
-								<div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Nome da Categoria" type="text">
-								</div>
-							</div>
-							<div class="row">
-								<div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Nome da Categoria" type="text">
-								</div>
-							</div>
-							<div class="row">
-								<div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Nome da Categoria" type="text">
-								</div>
-							</div>
-							<div class="row">
-								<div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Nome da Categoria" type="text">
-								</div>
-							</div>
-	   					</div>
-					</div>   					
-				</div>
-				<div class="col-lg-6 col-md-6 col-sm-6 content-details">
+				
+				<div class="col-lg-12 col-md-12 col-sm-12 content-details">
 					<div class="content-box">
 						<h4>ITENS</h4>
 	   					<div class="box inner-box bg-white">
 							<div class="row">
-								<div class=" col-lg-6 col-md-6 col-sm-6">
+								<div class=" col-lg-3 col-md-3 col-sm-3">
 									<p>Nome do Item</p>
 								</div>
-								<div class=" col-lg-6 col-md-6 col-sm-6">
+								<div class=" col-lg-3 col-md-3 col-sm-3">
 									<p>Categoria</p>
 								</div>
+                                                                <div class=" col-lg-3 col-md-3 col-sm-3">
+									<p>Quantidade</p>
+								</div>
+                                                                <div class=" col-lg-3 col-md-3 col-sm-3">
+									<p>Preço unidade</p>
+								</div>
 							</div>
 							<div class="row">
-								<div class=" col-lg-6 col-md-6 col-sm-6">
+								<div class=" col-lg-3 col-md-3 col-sm-3">
 									<input class="form-control input-box" placeholder="Informe o Item" type="text">
 								</div>
-								<div class=" col-lg-6 col-md-6 col-sm-6">
+								<div class=" col-lg-3 col-md-3 col-sm-3">
 									<div class="form-group">
 									  <select class="form-control input-box">
 									  	<option>Informe a Categoria</option>
-									    <option>1</option>
-									    <option>2</option>
-									    <option>3</option>
-									    <option>4</option>
+									    <option>Alimentício</option>
+                                                                            <option>Água</option>
+                                                                            <option>Aluguel</option>
+                                                                            <option>Energia elétrica</option>
+                                                                            <option>Higiene</option>
+                                                                            <option>Obras</option>
+                                                                            <option>Saúde</option>
+                                                                            <option>Telefonia</option>
+                                                                            <option>Vestuário</option>
 									  </select>
 									</div>
-								</div>						
-							</div>
-							<div class="row">
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<input class="form-control input-box" placeholder="Informe o Item" type="text">
+								</div>	
+                                                                <div class=" col-lg-3 col-md-3 col-sm-3">
+									<input class="form-control input-box" placeholder="Unidades" type="text">
 								</div>
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<div class="form-group">
-									  <select class="form-control input-box">
-									  	<option>Informe a Categoria</option>
-									    <option>1</option>
-									    <option>2</option>
-									    <option>3</option>
-									    <option>4</option>
-									  </select>
-									</div>
-								</div>						
-							</div>
-							<div class="row">
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<input class="form-control input-box" placeholder="Informe o Item" type="text">
+                                                                <div class=" col-lg-3 col-md-3 col-sm-3">
+									<input class="form-control input-box" placeholder="R$" type="text">
 								</div>
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<div class="form-group">
-									  <select class="form-control input-box">
-									  	<option>Informe a Categoria</option>
-									    <option>1</option>
-									    <option>2</option>
-									    <option>3</option>
-									    <option>4</option>
-									  </select>
-									</div>
-								</div>						
 							</div>
-							<div class="row">
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<input class="form-control input-box" placeholder="Informe o Item" type="text">
-								</div>
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<div class="form-group">
-									  <select class="form-control input-box">
-									  	<option>Informe a Categoria</option>
-									    <option>1</option>
-									    <option>2</option>
-									    <option>3</option>
-									    <option>4</option>
-									  </select>
-									</div>
-								</div>						
-							</div>
-							<div class="row">
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<input class="form-control input-box" placeholder="Informe o Item" type="text">
-								</div>
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<div class="form-group">
-									  <select class="form-control input-box">
-									  	<option>Informe a Categoria</option>
-									    <option>1</option>
-									    <option>2</option>
-									    <option>3</option>
-									    <option>4</option>
-									  </select>
-									</div>
-								</div>						
-							</div>
-							<div class="row">
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<input class="form-control input-box" placeholder="Informe o Item" type="text">
-								</div>
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<div class="form-group">
-									  <select class="form-control input-box">
-									  	<option>Informe a Categoria</option>
-									    <option>1</option>
-									    <option>2</option>
-									    <option>3</option>
-									    <option>4</option>
-									  </select>
-									</div>
-								</div>						
-							</div>
-							<div class="row">
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<input class="form-control input-box" placeholder="Informe o Item" type="text">
-								</div>
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<div class="form-group">
-									  <select class="form-control input-box">
-									  	<option>Informe a Categoria</option>
-									    <option>1</option>
-									    <option>2</option>
-									    <option>3</option>
-									    <option>4</option>
-									  </select>
-									</div>
-								</div>						
-							</div>
-							<div class="row">
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<input class="form-control input-box" placeholder="Informe o Item" type="text">
-								</div>
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<div class="form-group">
-									  <select class="form-control input-box">
-									  	<option>Informe a Categoria</option>
-									    <option>1</option>
-									    <option>2</option>
-									    <option>3</option>
-									    <option>4</option>
-									  </select>
-									</div>
-								</div>						
-							</div>
+                                                    
 	   					</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+    
+        <script>
+            var botao = document.getElementById("salvar");
+            botao.addEventListener('click', function ()
+            {
+                alert('Cadastro realizado com sucesso !');
+
+            })
+        </script> 
 </body>
 </html>

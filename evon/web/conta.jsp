@@ -1,8 +1,9 @@
 <%-- 
-    Document   : conta
-    Created on : 01/07/2018, 14:17:01
+    Document   : empresas
+    Created on : 01/07/2018, 14:14:08
     Author     : Luiz Rossa
 --%>
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -11,7 +12,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link rel="StyleSheet" type="text/css" href="resources/assets/css/estilos.css" media="screen" >
 <link rel="StyleSheet" type="text/css" href="resources/assets/css/bootstrap.css" media="screen" >
-<title>Conta</title>
+<title>Empresas</title>
 </head>
 <body>
 	<div class="content">
@@ -37,226 +38,63 @@
 	        	<p>Conta</p>
 	    	</div>
 			<div class="sub-header-total">
-				<button class="btn-blue">Salvar</button>
+                            <a href="usuarios.jsp"><button class="btn-blue" id="salvar">Salvar</button></a>
 			</div>
-                        
-                    <div class="modal fade" id="myModal" tabindex = "-1" role = "dialog" aria-labelledby ="myModalLabel" aria-hidden = "true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss = "modal" aria-hidden = "true">&times;</button>
-                                    <h4 class="modal-title" id="myModalLabel"></h4>
-                                </div>
-                                <div class="modal-body">
-                                    Cadastro efetuado com sucesso
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss = "modal">Fechar</button>>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
 		</div>
 		<div class="sub-menu inner">			
 			<div class="row">
 				<div class="col-lg-6 col-md-6 col-sm-6 content-details">
 					<div class="content-box">
-					<h4>CATEGORIAS</h4>
+					<h4>Cadastrar nova conta</h4>
 						<div class="box inner-box bg-white">
 							<div class="row">
 								<div class=" col-lg-8 col-md-8 col-sm-8">
-									<p>Nome da Categoria</p>
+									<p>Dados bancários</p>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Nome da Categoria" type="text">
+									<input class="form-control input-box" placeholder="Banco" type="text">
 								</div>
 							</div>
 							<div class="row">
 								<div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Nome da Categoria" type="text">
+									<input class="form-control input-box" placeholder="Número da conta" type="text">
 								</div>
 							</div>
 							<div class="row">
 								<div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Nome da Categoria" type="text">
+									<input class="form-control input-box" placeholder="Agência" type="text">
 								</div>
 							</div>
 							<div class="row">
 								<div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Nome da Categoria" type="text">
+									<input class="form-control input-box" placeholder="Operação" type="text">
 								</div>
 							</div>
 							<div class="row">
 								<div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Nome da Categoria" type="text">
+									<input class="form-control input-box" placeholder="Nome do titular" type="text">
 								</div>
 							</div>
-							<div class="row">
+                                                    	<div class="row">
 								<div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Nome da Categoria" type="text">
+									<input class="form-control input-box" placeholder="CPF do titular" type="text">
 								</div>
 							</div>
-							<div class="row">
-								<div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Nome da Categoria" type="text">
-								</div>
-							</div>
-							<div class="row">
-								<div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Nome da Categoria" type="text">
-								</div>
-							</div>
+							
 	   					</div>
 					</div>   					
 				</div>
-				<div class="col-lg-6 col-md-6 col-sm-6 content-details">
-					<div class="content-box">
-						<h4>ITENS</h4>
-	   					<div class="box inner-box bg-white">
-							<div class="row">
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<p>Nome do Item</p>
-								</div>
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<p>Categoria</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<input class="form-control input-box" placeholder="Informe o Item" type="text">
-								</div>
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<div class="form-group">
-									  <select class="form-control input-box">
-									  	<option>Informe a Categoria</option>
-									    <option>1</option>
-									    <option>2</option>
-									    <option>3</option>
-									    <option>4</option>
-									  </select>
-									</div>
-								</div>						
-							</div>
-							<div class="row">
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<input class="form-control input-box" placeholder="Informe o Item" type="text">
-								</div>
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<div class="form-group">
-									  <select class="form-control input-box">
-									  	<option>Informe a Categoria</option>
-									    <option>1</option>
-									    <option>2</option>
-									    <option>3</option>
-									    <option>4</option>
-									  </select>
-									</div>
-								</div>						
-							</div>
-							<div class="row">
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<input class="form-control input-box" placeholder="Informe o Item" type="text">
-								</div>
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<div class="form-group">
-									  <select class="form-control input-box">
-									  	<option>Informe a Categoria</option>
-									    <option>1</option>
-									    <option>2</option>
-									    <option>3</option>
-									    <option>4</option>
-									  </select>
-									</div>
-								</div>						
-							</div>
-							<div class="row">
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<input class="form-control input-box" placeholder="Informe o Item" type="text">
-								</div>
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<div class="form-group">
-									  <select class="form-control input-box">
-									  	<option>Informe a Categoria</option>
-									    <option>1</option>
-									    <option>2</option>
-									    <option>3</option>
-									    <option>4</option>
-									  </select>
-									</div>
-								</div>						
-							</div>
-							<div class="row">
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<input class="form-control input-box" placeholder="Informe o Item" type="text">
-								</div>
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<div class="form-group">
-									  <select class="form-control input-box">
-									  	<option>Informe a Categoria</option>
-									    <option>1</option>
-									    <option>2</option>
-									    <option>3</option>
-									    <option>4</option>
-									  </select>
-									</div>
-								</div>						
-							</div>
-							<div class="row">
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<input class="form-control input-box" placeholder="Informe o Item" type="text">
-								</div>
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<div class="form-group">
-									  <select class="form-control input-box">
-									  	<option>Informe a Categoria</option>
-									    <option>1</option>
-									    <option>2</option>
-									    <option>3</option>
-									    <option>4</option>
-									  </select>
-									</div>
-								</div>						
-							</div>
-							<div class="row">
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<input class="form-control input-box" placeholder="Informe o Item" type="text">
-								</div>
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<div class="form-group">
-									  <select class="form-control input-box">
-									  	<option>Informe a Categoria</option>
-									    <option>1</option>
-									    <option>2</option>
-									    <option>3</option>
-									    <option>4</option>
-									  </select>
-									</div>
-								</div>						
-							</div>
-							<div class="row">
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<input class="form-control input-box" placeholder="Informe o Item" type="text">
-								</div>
-								<div class=" col-lg-6 col-md-6 col-sm-6">
-									<div class="form-group">
-									  <select class="form-control input-box">
-									  	<option>Informe a Categoria</option>
-									    <option>1</option>
-									    <option>2</option>
-									    <option>3</option>
-									    <option>4</option>
-									  </select>
-									</div>
-								</div>						
-							</div>
-	   					</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                            
+        <script>
+            var botao = document.getElementById("salvar");
+            botao.addEventListener('click', function ()
+            {
+                alert('Cadastro realizado com sucesso !');
+
+            })
+        </script> 
+				
 </body>
 </html>

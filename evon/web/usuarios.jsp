@@ -51,64 +51,23 @@
 			<div class="sub-header-total">
                             <a href="logout.jsp"><button class="btn-blue">Logout</button></a>
 			</div>
+                
+                	<div class="jumbotron text-center">
+                        </div>
+  
+                        <div class="container-fluid-center">
+                          <div class="row">
+                            <div class="col-sm-5">
+                                <h3>Você já fez a sua doação hoje ?</h3>
+                              <p>Acesse o nosso link de doações, e escolha uma instituição para apoiar.</p>
+                            </div>
+
+                          </div>
+                        </div>
 		</div>
-		<div class="sub-menu inner">			
-			<div class="row">
-				<div class="col-lg-6 col-md-6 col-sm-6 content-details">
-					<div class="content-box">
-					<h4>Perfíl</h4>
-						<div class="box inner-box bg-white">
-							<div class="row">
-								<div class=" col-lg-8 col-md-8 col-sm-8">
-									<p>Nome da Categoria</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Nome da Categoria" type="text">
-								</div>
-							</div>
-							<div class="row">
-								<div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Nome da Categoria" type="text">
-								</div>
-							</div>
-							<div class="row">
-								<div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Nome da Categoria" type="text">
-								</div>
-							</div>
-							<div class="row">
-								<div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Nome da Categoria" type="text">
-								</div>
-							</div>
-							<div class="row">
-								<div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Nome da Categoria" type="text">
-								</div>
-							</div>
-							<div class="row">
-								<div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Nome da Categoria" type="text">
-								</div>
-							</div>
-							<div class="row">
-								<div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Nome da Categoria" type="text">
-								</div>
-							</div>
-							<div class="row">
-								<div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Nome da Categoria" type="text">
-								</div>
-							</div>
-	   					</div>
-					</div>   					
-				</div>
-				
-			</div>
-		</div>
+                
+                
+
 	</div>
 </body>
 </html>

@@ -23,9 +23,9 @@
 			<ul>
 				<li><a href="index.jsp">PAINEL</a></li>
 				<li><a href="arrecadacao-destinacao.jsp">ARRECADA플O E DESTINA플O</a></li>
-				<li class="active"><a href="configuracoes.jsp">CONFIGURA합ES</a></li>
+				<li><a href="configuracoes.jsp">CONFIGURA합ES</a></li>
 				<li><a href="fonte-receitas.jsp">FONTE DE RECEITAS</a></li>
-                                <li><a href="login.jsp">LOGIN</a></li>
+                                <li class="active"><a href=><a href="login.jsp">LOGIN</a></li>
 
 			</ul>
 		</div>
@@ -51,3 +51,4 @@
 	</div>
 </body>
 </html>
+

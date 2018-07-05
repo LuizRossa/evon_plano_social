@@ -1,6 +1,6 @@
 <%-- 
-    Document   : empresas
-    Created on : 01/07/2018, 14:14:08
+    Document   : instituicoes
+    Created on : 01/07/2018, 14:13:31
     Author     : Luiz Rossa
 --%>
 
@@ -12,7 +12,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link rel="StyleSheet" type="text/css" href="resources/assets/css/estilos.css" media="screen" >
 <link rel="StyleSheet" type="text/css" href="resources/assets/css/bootstrap.css" media="screen" >
-<title>Empresas</title>
+<title>Registrar-se</title>
 </head>
 <body>
 	<div class="content">
@@ -25,36 +25,33 @@
 				<li><a href="arrecadacao-destinacao.jsp">ARRECADAÇÃO E DESTINAÇÃO</a></li>
 				<li><a href="configuracoes.jsp">CONFIGURAÇÕES</a></li>
 				<li><a href="fonte-receitas.jsp">FONTE DE RECEITAS</a></li>
-                                <li><a href="usuarios.jsp">USUÁRIO</a></li>
-                                <li><a href="instituicoes.jsp">INSTITUIÇÕES</a></li>
-                                <li class="active"><a href="empresas.jsp">EMPRESAS</a></li>
-                                <li><a href="doacoes.jsp">DOAÇÕES</a></li>
-                                <li><a href="despesas.jsp">DESPESAS</a></li>
-                                <li><a href="conta.jsp">CONTA</a></li>
+                                <li><a href="login.jsp">LOGIN</a></li>
+                                <li class="active"><a href="cadastroUsuario.jsp">CADASTRO USUÁRIO</a></li>
 			</ul>
 		</div>
 		<div class="sub-header">
 	    	<div class="sub-header-title">
-	        	<p>Empresas</p>
+	        	<p>Cadastrar novo usuário</p>
 	    	</div>
 			<div class="sub-header-total">
                             <a href="usuarios.jsp"><button class="btn-blue" id="salvar">Salvar</button></a>
 			</div>
+                    
 		</div>
 		<div class="sub-menu inner">			
 			<div class="row">
 				<div class="col-lg-6 col-md-6 col-sm-6 content-details">
 					<div class="content-box">
-					<h4>Cadastrar nova empresa</h4>
+					<h4>Registrar-se</h4>
 						<div class="box inner-box bg-white">
 							<div class="row">
 								<div class=" col-lg-8 col-md-8 col-sm-8">
-									<p>Nome da Empresa</p>
+									<p>Usuário</p>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Nome da Empresa" type="text">
+									<input class="form-control input-box" placeholder="Nome completo" type="text">
 								</div>
 							</div>
 							<div class="row">
@@ -74,22 +71,34 @@
 							</div>
 							<div class="row">
 								<div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Nome do usuário" type="text">
+									<input class="form-control input-box" placeholder="Nome da empresa" type="text">
+								</div>
+							</div>
+                                                    
+                                                    	<div class="row">
+								<div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
+									<input class="form-control input-box" placeholder="Nome da instituição" type="text">
 								</div>
 							</div>
 							
 	   					</div>
 					</div>   					
 				</div>
-                            
-        <script>
-            var botao = document.getElementById("salvar");
-            botao.addEventListener('click', function ()
-            {
-                alert('Cadastro realizado com sucesso !');
-
-            })
-        </script> 
-				
+		
+			</div>
+		</div>
+	</div>
+    
+    <script>
+	var botao = document.getElementById("salvar");
+        botao.addEventListener('click', function ()
+        {
+            alert('Cadastro realizado com sucesso !');
+            
+        })
+</script> 
+    
 </body>
 </html>
+
+

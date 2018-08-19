@@ -98,7 +98,7 @@
 	var botao = document.getElementById("salvar");
         botao.addEventListener('click', function ()
         {
-            alert('Cadastro realizado com sucesso !');
+            alert('Novo usuário cadastrado !');
             
         })
 </script> 

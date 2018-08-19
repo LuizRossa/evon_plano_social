@@ -37,7 +37,7 @@
 	        	<p>Doações</p>
 	    	</div>
 			<div class="sub-header-total">
-                            <a href="usuarios.jsp"><button class="btn-blue" id="salvar">Salvar</button></a>
+                            <a href="usuarios.jsp"><button class="btn-blue" id="salvar">Enviar</button></a>
 			</div>
 		</div>
 		<div class="sub-menu inner">			
@@ -45,7 +45,7 @@
 				
 				<div class="col-lg-12 col-md-12 col-sm-12 content-details">
 					<div class="content-box">
-						<h4>ITENS</h4>
+						<h4>Realizar Doação</h4>
 	   					<div class="box inner-box bg-white">
 							<div class="row">
 								<div class=" col-lg-3 col-md-3 col-sm-3">
@@ -54,20 +54,33 @@
                                                                 <div class=" col-lg-3 col-md-3 col-sm-3">
 									<p>Valor da doação</p>
 								</div>
+                                                                <div class=" col-lg-3 col-md-3 col-sm-3">
+									<p>Conta de origem</p>
+								</div>
+                                                            
 							</div>
 							<div class="row">
 								<div class=" col-lg-3 col-md-3 col-sm-3">
 									<div class="form-group">
 									  <select class="form-control input-box">
-									  	<option>Instituição</option>
+									  	<option>--Selecione--</option>
 									    <option>Cotolengo</option>
                                                                             <option>Instituto Amma</option>
-                                                                            <option>Amigos</option>
+                                                                            <option>Instituto Amigos</option>
 									  </select>
 									</div>
 								</div>
                                                                 <div class=" col-lg-3 col-md-3 col-sm-3">
 									<input class="form-control input-box" placeholder="R$" type="text">
+								</div>
+                                                            <div class=" col-lg-3 col-md-3 col-sm-3">
+									<div class="form-group">
+									  <select class="form-control input-box">
+									  	<option>--Selecione--</option>
+									    <option>0007060402</option>
+                                                                            <option>0290239832</option>
+									  </select>
+									</div>
 								</div>
 							</div>
                                                     

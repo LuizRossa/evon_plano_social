@@ -86,7 +86,7 @@
             var botao = document.getElementById("salvar");
             botao.addEventListener('click', function ()
             {
-                alert('Cadastro realizado com sucesso !');
+                alert('Empresa cadastrada com sucesso !');
 
             })
         </script> 

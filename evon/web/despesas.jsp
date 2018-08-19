@@ -100,7 +100,7 @@
             var botao = document.getElementById("salvar");
             botao.addEventListener('click', function ()
             {
-                alert('Cadastro realizado com sucesso !');
+                alert('Cadastro de despesas realizado com sucesso !');
 
             })
         </script> 

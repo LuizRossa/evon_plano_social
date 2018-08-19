@@ -91,7 +91,7 @@
 	var botao = document.getElementById("salvar");
         botao.addEventListener('click', function ()
         {
-            alert('Cadastro realizado com sucesso !');
+            alert('Instituição cadastrada com sucesso !');
             
         })
 </script> 

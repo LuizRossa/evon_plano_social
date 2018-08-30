@@ -1,5 +1,6 @@
 package br.com.rossa.controller;
 
+import br.com.rossa.bo.ContaBO;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -43,18 +44,23 @@ public class ServletConta extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException 
     {
+        ContaBO contaBO = new ContaBO();
+        request.setAttribute("msg", "inserido com sucesso");
+
+       
         //Recebendo parâmetros informados pelo usuario
         String banco = request.getParameter("banco");
-        String num_conta = request.getParameter("num_conta");
-        String agencia = request.getParameter("agencia");
-        String operacao = request.getParameter("operacao");
-        String empresa = request.getParameter("empresa");
-        String cnpj = request.getParameter("cnpj");
+        int num_conta = Integer.parseInt(request.getParameter("num_conta"));
+        int agencia = Integer.parseInt(request.getParameter("agencia"));
+        int operacao = Integer.parseInt(request.getParameter("operacao"));
+
         
-        System.out.println(banco);
+        //System.out.println(banco);
+        
+        request.getRequestDispatcher(contaBO.insert(banco, num_conta, agencia, operacao)).forward(request, response);
+        //request.getRequestDispatcher("conta.jsp").forward(request, response);
         
         
-        request.getRequestDispatcher("conta.jsp").forward(request, response);
     }
 
 

@@ -73,16 +73,6 @@
                                             <input class="form-control input-box" placeholder="Operação" type="text" name="operacao">
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-                                            <input class="form-control input-box" placeholder="Nome da empresa" type="text" name="empresa">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-                                            <input class="form-control input-box" placeholder="CNPJ" type="text" name="cnpj">
-                                        </div>
-                                    </div>
                                     <input type="submit" value="Salvar">    
                                 </div>
                                 

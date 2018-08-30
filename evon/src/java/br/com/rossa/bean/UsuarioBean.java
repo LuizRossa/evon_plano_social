@@ -11,20 +11,40 @@ package br.com.rossa.bean;
  */
 public class UsuarioBean 
 {
-    private String nome, tipo_usuario, instituicao, empresa, login, senha;
+    private String nome, senha, email, telefone, instituicao, empresa ;
 
-    public UsuarioBean(String nome, String tipo_usuario, String instituicao, String empresa, String login, String senha) 
+    public UsuarioBean(String nome, String senha, String email, String telefone, String instituicao, String empresa) 
     {
         this.nome = nome;
-        this.tipo_usuario = tipo_usuario;
+        this.senha = senha;
+        this.email = email;
+        this.telefone = telefone;
         this.instituicao = instituicao;
         this.empresa = empresa;
-        this.login = login;
-        this.senha = senha;
+    }
+
+    public String getEmail() 
+    {
+        return email;
+    }
+
+    public void setEmail(String email) 
+    {
+        this.email = email;
+    }
+
+    public String getTelefone() 
+    {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) 
+    {
+        this.telefone = telefone;
     }
     
 
-
+    
     public String getNome() 
     {
         return nome;
@@ -33,16 +53,6 @@ public class UsuarioBean
     public void setNome(String nome) 
     {
         this.nome = nome;
-    }
-
-    public String getTipo_usuario() 
-    {
-        return tipo_usuario;
-    }
-
-    public void setTipo_usuario(String tipo_usuario) 
-    {
-        this.tipo_usuario = tipo_usuario;
     }
 
     public String getInstituicao() 
@@ -63,16 +73,6 @@ public class UsuarioBean
     public void setEmpresa(String empresa) 
     {
         this.empresa = empresa;
-    }
-
-    public String getLogin() 
-    {
-        return login;
-    }
-
-    public void setLogin(String login) 
-    {
-        this.login = login;
     }
 
     public String getSenha() 

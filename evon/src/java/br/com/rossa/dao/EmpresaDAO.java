@@ -5,7 +5,7 @@
  */
 package br.com.rossa.dao;
 
-import br.com.rossa.bean.UsuarioBean;
+import br.com.rossa.bean.EmpresaBean;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,24 +13,23 @@ import java.util.List;
  *
  * @author Luiz Rossa
  */
-public class UsuarioDAO 
+public class EmpresaDAO 
 {
-    public static List<UsuarioBean> list = null;
+    public static List<EmpresaBean> list = null;
     
-    public UsuarioDAO()
+    public EmpresaDAO()
     {
-        list = new ArrayList<UsuarioBean>();
+        list = new ArrayList<EmpresaBean>();
     }
     
-    public boolean insert(UsuarioBean usuarioBean) 
+    public boolean insert(EmpresaBean empresaBean) 
     {
-        list.add(usuarioBean);
+        list.add(empresaBean);
         System.out.println(list.get(0).getNome());
-        System.out.println(list.get(0).getSenha());
+        System.out.println(list.get(0).getEndereco());
         System.out.println(list.get(0).getEmail());
         System.out.println(list.get(0).getTelefone());
-        System.out.println(list.get(0).getEmpresa());
-        System.out.println(list.get(0).getInstituicao());
+        System.out.println(list.get(0).getCnpj());
         return true;
     }
 }

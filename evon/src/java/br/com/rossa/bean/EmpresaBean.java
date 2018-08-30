@@ -11,13 +11,15 @@ package br.com.rossa.bean;
  */
 public class EmpresaBean 
 {
-    private String nome, endereco, cnpj;
-    private ContaBean conta;
+    private String nome, endereco, email, telefone, cnpj;
 
-    public EmpresaBean(String nome, String endereco, String cnpj) 
+
+    public EmpresaBean(String nome, String endereco, String email, String telefone, String cnpj) 
     {
         this.nome = nome;
         this.endereco = endereco;
+        this.email = email;
+        this.telefone = telefone;
         this.cnpj = cnpj;
     }
     
@@ -52,6 +54,29 @@ public class EmpresaBean
     {
         this.cnpj = cnpj;
     }
+
+    public String getEmail() 
+    {
+        return email;
+    }
+
+    public void setEmail(String email) 
+    {
+        this.email = email;
+    }
+
+    public String getTelefone() 
+    {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) 
+    {
+        this.telefone = telefone;
+    }
+
+
+    
     
     
     

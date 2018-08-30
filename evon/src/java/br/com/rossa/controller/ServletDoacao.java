@@ -5,6 +5,7 @@
  */
 package br.com.rossa.controller;
 
+import br.com.rossa.bo.DoacaoBO;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -17,7 +18,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Luiz Rossa
  */
-@WebServlet(name = "ServeletDoacao", urlPatterns = {"/doacao"})
+@WebServlet(name = "ServletDoacao", urlPatterns = {"/doacao"})
 public class ServletDoacao extends HttpServlet {
 
     /**
@@ -32,18 +33,7 @@ public class ServletDoacao extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Doações</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Doações</h1>");
-            out.println("</body>");
-            out.println("</html>");
-        }
+
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -73,6 +63,17 @@ public class ServletDoacao extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
+        
+        DoacaoBO doacaoBO = new DoacaoBO();
+        request.setAttribute("msg", "inserido com sucesso");
+
+       
+        //Recebendo parâmetros informados pelo usuario
+        String instituicao = request.getParameter("instituicao");
+        float valor = Float.parseFloat(request.getParameter("valor"));
+        int conta_corrente = Integer.parseInt(request.getParameter("conta_corrente"));
+        
+        request.getRequestDispatcher(doacaoBO.insert(instituicao, valor, conta_corrente)).forward(request, response);
     }
 
     /**

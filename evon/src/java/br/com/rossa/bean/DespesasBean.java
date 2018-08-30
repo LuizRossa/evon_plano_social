@@ -15,7 +15,7 @@ public class DespesasBean
     private float preco;
     private int quantidade;
 
-    public DespesasBean(String produto, String categoria, float preco, int quantidade) 
+    public DespesasBean(String produto, String categoria, int quantidade, float preco) 
     {
         this.produto = produto;
         this.categoria = categoria;

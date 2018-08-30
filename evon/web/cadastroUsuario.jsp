@@ -5,105 +5,98 @@
 --%>
 
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+         pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link rel="StyleSheet" type="text/css" href="resources/assets/css/estilos.css" media="screen" >
-<link rel="StyleSheet" type="text/css" href="resources/assets/css/bootstrap.css" media="screen" >
-<title>Registrar-se</title>
-</head>
-<body>
-	<div class="content">
-		<div class="header">
-			<img class="logo" src="resources/assets/images/logo-ilustrando.jpg">
-		</div>
-		<div class="menu-lateral">
-			<ul>
-				<li><a href="index.jsp">PAINEL</a></li>
-				<li><a href="arrecadacao-destinacao.jsp">ARRECADAÇÃO E DESTINAÇÃO</a></li>
-				<li><a href="configuracoes.jsp">CONFIGURAÇÕES</a></li>
-				<li><a href="fonte-receitas.jsp">FONTE DE RECEITAS</a></li>
-                                <li><a href="login.jsp">LOGIN</a></li>
-                                <li class="active"><a href="cadastroUsuario.jsp">CADASTRO USUÁRIO</a></li>
-			</ul>
-		</div>
-		<div class="sub-header">
-	    	<div class="sub-header-title">
-	        	<p>Cadastrar novo usuário</p>
-	    	</div>
-			<div class="sub-header-total">
-                            <a href="usuarios.jsp"><button class="btn-blue" id="salvar">Salvar</button></a>
-			</div>
-                    
-		</div>
-		<div class="sub-menu inner">			
-			<div class="row">
-				<div class="col-lg-6 col-md-6 col-sm-6 content-details">
-					<div class="content-box">
-					<h4>Registrar-se</h4>
-						<div class="box inner-box bg-white">
-							<div class="row">
-								<div class=" col-lg-8 col-md-8 col-sm-8">
-									<p>Usuário</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Nome completo" type="text">
-								</div>
-							</div>
-							<div class="row">
-								<div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Endereço" type="text">
-								</div>
-							</div>
-							<div class="row">
-								<div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="E-mail" type="text">
-								</div>
-							</div>
-                                                    	<div class="row">
-								<div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-                                                                    <input class="form-control input-box" placeholder="Senha" type="password">
-								</div>
-							</div>
-							<div class="row">
-								<div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Telefone" type="text">
-								</div>
-							</div>
-							<div class="row">
-								<div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Nome da empresa" type="text">
-								</div>
-							</div>
-                                                    
-                                                    	<div class="row">
-								<div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
-									<input class="form-control input-box" placeholder="Nome da instituição" type="text">
-								</div>
-							</div>
-							
-	   					</div>
-					</div>   					
-				</div>
-		
-			</div>
-		</div>
-	</div>
-    
-    <script>
-	var botao = document.getElementById("salvar");
-        botao.addEventListener('click', function ()
-        {
-            alert('Novo usuário cadastrado !');
-            
-        })
-</script> 
-    
-</body>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <link rel="StyleSheet" type="text/css" href="resources/assets/css/estilos.css" media="screen" >
+        <link rel="StyleSheet" type="text/css" href="resources/assets/css/bootstrap.css" media="screen" >
+        <title>Registrar-se</title>
+    </head>
+    <body>
+        <div class="content">
+            <div class="header">
+                <img class="logo" src="resources/assets/images/logo-ilustrando.jpg">
+            </div>
+            <div class="menu-lateral">
+                <ul>
+                    <li><a href="index.jsp">PAINEL</a></li>
+                    <li><a href="arrecadacao-destinacao.jsp">ARRECADAÇÃO E DESTINAÇÃO</a></li>
+                    <li><a href="configuracoes.jsp">CONFIGURAÇÕES</a></li>
+                    <li><a href="fonte-receitas.jsp">FONTE DE RECEITAS</a></li>
+                    <li><a href="login.jsp">LOGIN</a></li>
+                    <li class="active"><a href="cadastroUsuario.jsp">CADASTRO USUÁRIO</a></li>
+                </ul>
+            </div>
+            <div class="sub-header">
+                <div class="sub-header-title">
+                    <p>Cadastrar novo usuário</p>
+                </div>
+            </div>
+            <div class="sub-menu inner">			
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 content-details">
+                        <div class="content-box">
+                            <form action="cadastroUsuario" method="POST">
+                                <h4>Registrar-se</h4>
+                                <div class="box inner-box bg-white">
+                                    <div class="row">
+                                        <div class=" col-lg-8 col-md-8 col-sm-8">
+                                            <p>Usuário</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
+                                            <input class="form-control input-box" placeholder="Nome completo" type="text" name="usuario">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
+                                            <input class="form-control input-box" placeholder="Senha" type="password" name="senha">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
+                                            <input class="form-control input-box" placeholder="E-mail" type="text" name="email">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
+                                            <input class="form-control input-box" placeholder="Telefone" type="text" name="telefone">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
+                                            <input class="form-control input-box" placeholder="Nome da empresa" type="text" name="empresa">
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class=" col-lg-8 col-md-8 col-sm-8" style="margin-bottom: 15px;">
+                                            <input class="form-control input-box" placeholder="Nome da instituição" type="text" name="instituicao">
+                                        </div>
+                                    </div>
+                                     <input type="submit" value="Salvar"> 
+                                </div>
+                            </form>
+                        </div>   					
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var botao = document.getElementById("salvar");
+            botao.addEventListener('click', function ()
+            {
+                alert('Novo usuário cadastrado !');
+
+            })
+        </script> 
+
+    </body>
 </html>
 
 

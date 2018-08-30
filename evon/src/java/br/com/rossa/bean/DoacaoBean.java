@@ -12,12 +12,14 @@ package br.com.rossa.bean;
 public class DoacaoBean 
 {
     private float valor;
-    private EmpresaBean empresa;
-    private InstituicaoBean instituicao;
+    private String instituicao;
+    private int conta_origem;
    
-    public DoacaoBean()
+    public DoacaoBean(String instituicao,float valor, int conta_origem)
     {
-        
+        this.instituicao = instituicao;
+        this.valor = valor;
+        this.conta_origem = conta_origem;
     }
 
     public float getValor() 
@@ -28,6 +30,26 @@ public class DoacaoBean
     public void setValor(float valor) 
     {
         this.valor = valor;
+    }
+
+    public String getInstituicao() 
+    {
+        return instituicao;
+    }
+
+    public void setInstituicao(String instituicao) 
+    {
+        this.instituicao = instituicao;
+    }
+
+    public int getConta_origem() 
+    {
+        return conta_origem;
+    }
+
+    public void setConta_origem(int conta_origem) 
+    {
+        this.conta_origem = conta_origem;
     }
     
     

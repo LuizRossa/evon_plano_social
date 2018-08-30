@@ -5,6 +5,7 @@
  */
 package br.com.rossa.controller;
 
+import br.com.rossa.bo.UsuarioBO;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -17,7 +18,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Luiz Rossa
  */
-@WebServlet(name = "ServeletUsuario", urlPatterns = {"/usuario"})
+@WebServlet(name = "ServletUsuario", urlPatterns = {"/cadastroUsuario"})
 public class ServletUsuario extends HttpServlet {
 
     /**
@@ -32,18 +33,7 @@ public class ServletUsuario extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Perfil</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Usuário</h1>");
-            out.println("</body>");
-            out.println("</html>");
-        }
+
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -73,6 +63,24 @@ public class ServletUsuario extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
+        
+        UsuarioBO usuarioBO = new UsuarioBO();
+        request.setAttribute("msg", "inserido com sucesso");
+
+       
+        //Recebendo parâmetros informados pelo usuario
+        String usuario = request.getParameter("usuario");
+        String senha = request.getParameter("senha");
+        String email = request.getParameter("email");
+        String telefone = request.getParameter("telefone");
+        String empresa = request.getParameter("empresa");
+        String instituicao = request.getParameter("instituicao");
+
+        
+        //System.out.println(banco);
+        
+        request.getRequestDispatcher(usuarioBO.insert(usuario, senha, email, telefone, empresa, instituicao)).forward(request, response);
+    
     }
 
     /**

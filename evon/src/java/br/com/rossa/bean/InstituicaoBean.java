@@ -5,16 +5,75 @@
  */
 package br.com.rossa.bean;
 
-import org.eclipse.jdt.internal.compiler.env.IBinaryType;
+
 
 /**
  *
  * @author Luiz Rossa
  */
-public class InstituicaoBean extends EmpresaBean
+public class InstituicaoBean
 {
-    public InstituicaoBean(String nome, String endereco, String cnpj) 
+    private String nome, endereco, email, telefone, cnpj;
+
+    public InstituicaoBean(String nome, String endereco, String email, String telefone, String cnpj) 
     {
-        super(nome, endereco, cnpj);
+        this.nome = nome;
+        this.endereco = endereco;
+        this.email = email;
+        this.telefone = telefone;
+        this.cnpj = cnpj;
     }
+
+    public String getNome() 
+    {
+        return nome;
+    }
+
+    public void setNome(String nome) 
+    {
+        this.nome = nome;
+    }
+
+    public String getEndereco() 
+    {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) 
+    {
+        this.endereco = endereco;
+    }
+
+    public String getEmail() 
+    {
+        return email;
+    }
+
+    public void setEmail(String email) 
+    {
+        this.email = email;
+    }
+
+    public String getTelefone() 
+    {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) 
+    {
+        this.telefone = telefone;
+    }
+
+    public String getCnpj() 
+    {
+        return cnpj;
+    }
+
+    public void setCnpj(String cnpj) 
+    {
+        this.cnpj = cnpj;
+    }
+    
+    
+ 
 }

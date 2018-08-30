@@ -12,13 +12,14 @@ package br.com.rossa.bean;
 public class ContaBean 
 {
     private String banco;
-    private int agencia, conta_corrente;
+    int conta_corrente, agencia, operacao;
 
-    public ContaBean(String banco, int agencia, int conta_corrente) 
+    public ContaBean(String banco, int conta_corrente, int agencia, int operacao) 
     {
         this.banco = banco;
         this.agencia = agencia;
         this.conta_corrente = conta_corrente;
+        this.operacao = operacao;
     }
     
 
@@ -51,6 +52,16 @@ public class ContaBean
     public void setConta_corrente(int conta_corrente) 
     {
         this.conta_corrente = conta_corrente;
+    }
+
+    public int getOperacao() 
+    {
+        return operacao;
+    }
+
+    public void setOperacao(int operacao) 
+    {
+        this.operacao = operacao;
     }
     
     
